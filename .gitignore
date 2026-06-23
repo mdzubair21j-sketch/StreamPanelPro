@@ -1,0 +1,40 @@
+# Composer
+/vendor/
+
+# Environment files
+.env
+.env.*
+
+# Logs
+logs/*
+*.log
+
+# Backups
+backups/*
+*.sql
+
+# Uploads
+uploads/*
+!uploads/.gitkeep
+
+# Cache
+cache/*
+tmp/*
+
+# IDE files
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Node modules (if used later)
+node_modules/
+
+# PHPUnit
+.phpunit.result.cache
+
+# Generated files
+install.lock
+config.php
