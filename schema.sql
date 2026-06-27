@@ -172,3 +172,24 @@ seen TINYINT DEFAULT 0,
 created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 
 );
+CREATE TABLE invoices(
+
+id INT AUTO_INCREMENT PRIMARY KEY,
+
+customer_id INT,
+
+amount DECIMAL(10,2),
+
+status ENUM(
+
+'paid',
+
+'unpaid'
+
+)
+
+DEFAULT 'unpaid',
+
+created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+
+);
