@@ -49,3 +49,54 @@ timezone VARCHAR(50),
 currency VARCHAR(10)
 
 );
+CREATE TABLE packages(
+
+id INT AUTO_INCREMENT PRIMARY KEY,
+
+name VARCHAR(100),
+
+duration_days INT,
+
+price DECIMAL(10,2),
+
+max_connections INT DEFAULT 1
+
+);
+
+
+
+CREATE TABLE subscriptions(
+
+id INT AUTO_INCREMENT PRIMARY KEY,
+
+customer_id INT,
+
+package_id INT,
+
+start_date DATE,
+
+expiry_date DATE,
+
+status ENUM(
+
+'active',
+'expired',
+'suspended'
+
+)
+
+);
+
+
+
+CREATE TABLE resellers(
+
+id INT AUTO_INCREMENT PRIMARY KEY,
+
+username VARCHAR(50),
+
+password VARCHAR(255),
+
+credits DECIMAL(10,2)
+
+);
