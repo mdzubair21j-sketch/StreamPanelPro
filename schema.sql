@@ -159,3 +159,16 @@ message TEXT,
 created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 
 );
+CREATE TABLE notifications(
+
+id INT AUTO_INCREMENT PRIMARY KEY,
+
+user_id INT,
+
+message TEXT,
+
+seen TINYINT DEFAULT 0,
+
+created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+
+);
