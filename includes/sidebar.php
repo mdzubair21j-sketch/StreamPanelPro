@@ -1,41 +1,19 @@
-<div>
+<div class="sidebar">
 
-<a href="dashboard.php">
+<a href="dashboard.php">Dashboard</a>
 
-Dashboard
+<a href="customers.php">Customers</a>
 
-</a>
+<a href="resellers.php">Resellers</a>
 
-<br>
+<a href="packages.php">Packages</a>
 
-<a href="customers.php">
+<a href="tickets.php">Tickets</a>
 
-Customers
+<a href="invoices.php">Invoices</a>
 
-</a>
+<a href="backups.php">Backups</a>
 
-<br>
-
-<a href="resellers.php">
-
-Resellers
-
-</a>
-
-<br>
-
-<a href="packages.php">
-
-Packages
-
-</a>
-
-<br>
-
-<a href="settings.php">
-
-Settings
-
-</a>
+<a href="health.php">Health</a>
 
 </div>
