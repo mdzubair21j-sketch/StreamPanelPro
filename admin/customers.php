@@ -53,7 +53,31 @@ Customers
 Customers
 
 </h1>
+<h1>Customers</h1>
 
+<form method="GET">
+
+<input
+type="text"
+name="search"
+placeholder="Search Customer"
+value="<?= htmlspecialchars($search) ?>">
+
+<button type="submit">
+
+Search
+
+</button>
+
+</form>
+
+<br>
+
+<a href="customer_add.php">
+
+Add Customer
+
+</a>
 <a href="customer_add.php">
 
 Add Customer
