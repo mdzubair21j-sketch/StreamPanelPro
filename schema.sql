@@ -111,3 +111,14 @@ action TEXT,
 created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 
 );
+CREATE TABLE reseller_customers(
+
+id INT AUTO_INCREMENT PRIMARY KEY,
+
+reseller_id INT,
+
+customer_id INT,
+
+created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+
+);
