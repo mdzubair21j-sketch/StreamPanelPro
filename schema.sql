@@ -100,3 +100,14 @@ password VARCHAR(255),
 credits DECIMAL(10,2)
 
 );
+CREATE TABLE activity_logs(
+
+id INT AUTO_INCREMENT PRIMARY KEY,
+
+user_id INT,
+
+action TEXT,
+
+created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+
+);
