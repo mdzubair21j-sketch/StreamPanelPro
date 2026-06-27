@@ -1,0 +1,11 @@
+{
+  "name": "streampanel/pro",
+  "description": "StreamPanel Pro",
+  "type": "project",
+  "require": {
+    "php": "^8.2",
+    "phpmailer/phpmailer": "^6.9",
+    "dompdf/dompdf": "^3.0",
+    "firebase/php-jwt": "^6.11"
+  }
+}
