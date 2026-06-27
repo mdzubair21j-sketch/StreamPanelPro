@@ -1,5 +1,25 @@
 <?php
+$search=$_GET['search'] ?? '';
 
+$stmt=$pdo->prepare(
+
+"SELECT *
+
+FROM customers
+
+WHERE fullname LIKE ?
+
+ORDER BY id DESC"
+
+);
+
+$stmt->execute([
+
+"%$search%"
+
+]);
+
+$customers=$stmt->fetchAll();
 session_start();
 
 require '../includes/database.php';
